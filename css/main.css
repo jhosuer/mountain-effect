@@ -1,0 +1,60 @@
+body, html {
+	text-align: center;
+}
+svg {
+	width: 40%;
+	margin-top: 100px;
+	transition: all 1.2s ease;
+}
+.st0 {
+	fill:#FFFFFF;
+}
+.st1 {
+	fill:#9FC6EE;
+	width: 100%;
+	height: 100%;
+}
+@keyframes moveMe {
+	from {
+		transform: translateX(0) translateY(0);
+		opacity: 0;
+
+	}
+	to {
+		transform: translateX(110px) translateY(-150px);
+		opacity: 1;
+	}
+}
+.st2 {
+	fill:url(#sun_1_);
+}
+.st3 {
+	fill:#F8FAF9;
+}
+.st4 {
+	font-family:'BalooThambi-Regular';
+}
+.st5 {
+	font-size:16px;
+}
+.st4 {
+	opacity: 0;
+	transition: opacity 1.5s ease;
+}
+#sun {
+	opacity: 0;
+}
+#sun, #reflection {
+	animation-duration: 1.2s;
+	animation-name: moveMe;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+svg:hover {
+	width: 80%;
+	margin-top:  -50px;
+}
+svg:hover .st4 {
+	display: block;
+	opacity: 1;
+}
